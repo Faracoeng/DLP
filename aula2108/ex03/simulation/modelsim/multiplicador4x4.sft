@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {multiplicador4x4.vho multiplicador4x4_vhd.sdo}}
+}

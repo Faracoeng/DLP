@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, /home/aluno/triState/tri_state.vhd
+source_file = 1, /home/aluno/triState/db/tri_state.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = tri_state
+instance = comp, \input~I\, input, tri_state, 1
+instance = comp, \ena~I\, ena, tri_state, 1
+instance = comp, \output~I\, output, tri_state, 1
