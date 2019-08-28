@@ -1,0 +1,21 @@
+|array_slicesv2
+row[0] => Mux1.IN2
+row[1] => Mux1.IN1
+column[0] => Mux0.IN5
+column[1] => Mux0.IN4
+column[1] => Mux1.IN4
+column[1] => slice4[2].DATAIN
+column[2] => Mux1.IN3
+column[2] => slice4[1].DATAIN
+slice1 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+slice2[2] <= <GND>
+slice2[1] <= <GND>
+slice3[4] <= <GND>
+slice3[3] <= <GND>
+slice3[2] <= <GND>
+slice3[1] <= <GND>
+slice4[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+slice4[2] <= column[1].DB_MAX_OUTPUT_PORT_TYPE
+slice4[1] <= column[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
