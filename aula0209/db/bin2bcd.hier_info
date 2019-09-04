@@ -1,0 +1,25 @@
+|bin2bcd
+C[0] => Div0.IN10
+C[0] => Mod0.IN13
+C[1] => Div0.IN9
+C[1] => Mod0.IN12
+C[2] => Div0.IN8
+C[2] => Mod0.IN11
+C[3] => Div0.IN7
+C[3] => Mod0.IN10
+C[4] => Div0.IN6
+C[4] => Mod0.IN9
+C[5] => Div0.IN5
+C[5] => Mod0.IN8
+C[6] => Div0.IN4
+C[6] => Mod0.IN7
+sd[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+sd[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+sd[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+sd[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+su[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+su[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+su[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+su[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
