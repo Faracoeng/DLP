@@ -1,5 +1,5 @@
 Flow report for bin2bcd
-Wed Sep  4 08:07:46 2019
+Wed Sep  4 08:29:54 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -91,7 +91,8 @@ applicable agreement for further details.
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 321 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 309 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 298 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 312 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,6 +106,7 @@ applicable agreement for further details.
 ; Assembler                 ; sj-lin-sidi-744605 ; Debian GNU/Linux ; 9          ; x86_64         ;
 ; TimeQuest Timing Analyzer ; sj-lin-sidi-744605 ; Debian GNU/Linux ; 9          ; x86_64         ;
 ; EDA Netlist Writer        ; sj-lin-sidi-744605 ; Debian GNU/Linux ; 9          ; x86_64         ;
+; TimeQuest Timing Analyzer ; sj-lin-sidi-744605 ; Debian GNU/Linux ; 9          ; x86_64         ;
 +---------------------------+--------------------+------------------+------------+----------------+
 
 
@@ -116,6 +118,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off bin2bcd -c bin2
 quartus_asm --read_settings_files=off --write_settings_files=off bin2bcd -c bin2bcd
 quartus_sta bin2bcd -c bin2bcd
 quartus_eda --read_settings_files=off --write_settings_files=off bin2bcd -c bin2bcd
+quartus_sta bin2bcd -c bin2bcd
 
 
 
