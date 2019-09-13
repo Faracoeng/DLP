@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vector_adder
-Fri Sep 13 11:21:45 2019
+Fri Sep 13 11:28:30 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Sep 13 11:21:45 2019            ;
+; Analysis & Synthesis Status ; Successful - Fri Sep 13 11:28:30 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; vector_adder                                     ;
 ; Top-level Entity Name       ; vector_adder                                     ;
 ; Family                      ; Cyclone                                          ;
-; Total logic elements        ; 12                                               ;
-; Total pins                  ; 20                                               ;
+; Total logic elements        ; 20                                               ;
+; Total pins                  ; 28                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; Total memory bits           ; 0                                                ;
 ; Total PLLs                  ; 0                                                ;
@@ -169,33 +169,33 @@ applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 12     ;
-;     -- Combinational with no register       ; 12     ;
+; Total logic elements                        ; 20     ;
+;     -- Combinational with no register       ; 20     ;
 ;     -- Register only                        ; 0      ;
 ;     -- Combinational with a register        ; 0      ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
 ;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 9      ;
-;     -- 2 input functions                    ; 3      ;
+;     -- 3 input functions                    ; 15     ;
+;     -- 2 input functions                    ; 5      ;
 ;     -- 1 input functions                    ; 0      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 3      ;
-;     -- arithmetic mode                      ; 9      ;
+;     -- normal mode                          ; 5      ;
+;     -- arithmetic mode                      ; 15     ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
 ;     -- synchronous clear/load mode          ; 0      ;
 ;     -- asynchronous clear/load mode         ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
-; Total logic cells in carry chains           ; 12     ;
-; I/O pins                                    ; 20     ;
-; Maximum fan-out node                        ; Add2~0 ;
+; Total logic cells in carry chains           ; 20     ;
+; I/O pins                                    ; 28     ;
+; Maximum fan-out node                        ; Add4~0 ;
 ; Maximum fan-out                             ; 2      ;
-; Total fan-out                               ; 37     ;
-; Average fan-out                             ; 1.16   ;
+; Total fan-out                               ; 59     ;
+; Average fan-out                             ; 1.23   ;
 +---------------------------------------------+--------+
 
 
@@ -204,7 +204,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |vector_adder              ; 12 (12)     ; 0            ; 0           ; 20   ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 12 (12)         ; 0 (0)      ; |vector_adder       ; work         ;
+; |vector_adder              ; 20 (20)     ; 0            ; 0           ; 28   ; 0            ; 20 (20)      ; 0 (0)             ; 0 (0)            ; 20 (20)         ; 0 (0)      ; |vector_adder       ; work         ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -229,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                ;
 +----------------+-------+-----------------------------------------------------+
-; N              ; 4     ; Signed Integer                                      ;
+; N              ; 6     ; Signed Integer                                      ;
 +----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -249,7 +249,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Sep 13 11:21:43 2019
+    Info: Processing started: Fri Sep 13 11:28:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vector_adder -c vector_adder
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 3 design units, including 1 entities, in source file vector_adder.vhd
@@ -261,14 +261,14 @@ Info (12021): Found 1 design units, including 0 entities, in source file my_pkg.
 Info (12127): Elaborating entity "vector_adder" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 24 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 12 logic cells
+    Info (21061): Implemented 20 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 354 megabytes
-    Info: Processing ended: Fri Sep 13 11:21:45 2019
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Sep 13 11:28:30 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

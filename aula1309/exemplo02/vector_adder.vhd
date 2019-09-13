@@ -7,7 +7,8 @@ use ieee.numeric_std.all;
 use work.my_pkg.all;
  
 entity vector_adder is
-	generic (N : natural := 4);
+	-- numero de N's
+	generic (N : natural := 6); 
 	port (
 		a	  : in a_slv (0 to N-1);
 		soma : out std_logic_vector (3 downto 0));
@@ -18,7 +19,7 @@ end entity;
 architecture ifsc_v1 of vector_adder is
 	signal soma_sig : signed(3 downto 0);
 begin
-	soma_sig <= signed(a(0)) + signed(a(1)) + signed(a(2)) +  signed(a(3));
+	soma_sig <= signed(a(0)) + signed(a(1)) + signed(a(2)) +  signed(a(3)) + signed(a(4)) +  signed(a(5));
 	soma <= std_logic_vector(soma_sig);
 end architecture;
  
