@@ -1,0 +1,28 @@
+entity andN is
+	generic
+	( N	: natural  :=	8
+		-- ...
+		-- <name>	: type  :=	<default_value>
+	);
+	port
+	(
+		-- Input ports
+		X	: in  bit_vector(0 to N-1);
+		-- Input ports
+		Y	: out  bit
+	);
+end entity;
+
+architecture andre01 of andN is
+	signal fio : bit_vector(0 to N-1);
+begin
+y <= fio(N-1);
+
+andreLoop: 
+	for i in 1 to N-1 generate
+		fio(i) <= fio(i-1) and X(i);
+	end generate;
+	fio(0) <= x(0);
+end architecture;
+
+
