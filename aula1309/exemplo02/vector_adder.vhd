@@ -24,8 +24,11 @@ end architecture;
  
 -- Versão que realiza a soma usando um FOR GENERATE
 architecture ifsc_v2 of vector_adder is
- 
+ signal fio : a_sig(0 to N-1);
 begin
- 
- 
+fio(0) <= signed (a(0));
+ loopsoma : for i in 1 to N-1 generate
+ fio (i) <= signed(a(i)) + fio (i - 1);
+ end generate;
+ soma <= std_logic_vector(fio(N-1));
 end architecture;
