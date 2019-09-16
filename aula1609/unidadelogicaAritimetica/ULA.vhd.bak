@@ -1,0 +1,29 @@
+entity ULA is
+	generic(N : natural := 4);
+	);
+	port
+	(
+		-- Input ports
+		
+		a, b : in  standard_logic_vector(7 downto 0);	
+		opcode : in  standard_logic_vector(3 downto 0)
+		y : out  standard_logic_vector(7 downto 0);
+
+		-- Inout ports
+		<name>	: inout <type>;
+
+		-- Output ports
+		<name>	: out <type>;
+		<name>	: out <type> := <default_value>
+	);
+end ULA;
+
+
+architecture andre01 of ULA is
+
+
+begin
+
+
+
+end andre01;
