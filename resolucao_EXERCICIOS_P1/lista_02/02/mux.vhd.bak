@@ -1,0 +1,27 @@
+library ieee;
+use std_logic_1164.all;
+----------------------------
+entity mux is
+	--generic
+	--(
+		--<name>	: <type>  :=	<default_value>;
+		--...
+	--	<name>	: <type>  :=	<default_value>
+--	);
+	port(
+		-- Input ports
+		a, b	: in std_logic_vector (7 downto 0);
+		sel	: in std_logic_vector (1 downto 0) ;
+		-- Output ports
+		x     : out std_logic_vector (7 downto 0) ;
+	--	<name>	: out <type> := <default_value>
+	);
+end entity mux;
+--------------------------------------
+architecture  andre01 of mux is
+	-- Declarations (optional)
+begin
+		
+
+end <arch_name>;
+

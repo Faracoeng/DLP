@@ -1,0 +1,10 @@
+PACKAGE tipo_generico IS
+GENERIC (CONSTANT words: NATURAL;
+TYPE: word_type);
+TYPE tipo_generico IS ARRAY 1 TO words OF word_type;
+END PACKAGE;
+FUNCTION my_function IS
+GENERIC (VARIABLE word: BIT_VECTOR(15 DOWNTO 0);
+BEGIN
+...
+END FUNCTION;

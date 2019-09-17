@@ -1,0 +1,33 @@
+|mux
+a[0] => x[0].DATAB
+a[1] => x[1].DATAB
+a[2] => x[2].DATAB
+a[3] => x[3].DATAB
+a[4] => x[4].DATAB
+a[5] => x[5].DATAB
+a[6] => x[6].DATAB
+a[7] => x[7].DATAB
+b[0] => x[0].DATAA
+b[1] => x[1].DATAA
+b[2] => x[2].DATAA
+b[3] => x[3].DATAA
+b[4] => x[4].DATAA
+b[5] => x[5].DATAA
+b[6] => x[6].DATAA
+b[7] => x[7].DATAA
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN1
+sel[0] => Equal2.IN0
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN0
+sel[1] => Equal2.IN1
+x[0] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+x[4] <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= x[5].DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= x[6].DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= x[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
