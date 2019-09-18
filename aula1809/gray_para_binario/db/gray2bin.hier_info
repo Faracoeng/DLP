@@ -1,0 +1,12 @@
+|gray2bin
+gray[0] => bin.IN1
+gray[1] => bin.IN1
+gray[2] => bin.IN0
+gray[3] => bin.IN1
+gray[3] => bin[3].DATAIN
+bin[0] << bin.DB_MAX_OUTPUT_PORT_TYPE
+bin[1] << bin.DB_MAX_OUTPUT_PORT_TYPE
+bin[2] << bin.DB_MAX_OUTPUT_PORT_TYPE
+bin[3] << gray[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
