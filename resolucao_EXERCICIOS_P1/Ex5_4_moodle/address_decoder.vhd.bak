@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity address_decoder is
-  generic (N : natural := 10); 
+  generic (N : natural := 3); 
   port (
     address : in STD_LOGIC_VECTOR (N - 1 downto 0);
     ena : in STD_LOGIC;
