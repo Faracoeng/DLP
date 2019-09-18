@@ -1,0 +1,17 @@
+entity bin2gray is
+ 
+	generic (N : natural := 4 )
+ 
+	port
+	(
+		b  : in std_logic_vector(____)
+		g  : out std_logic_vector(____)
+	)
+ 
+end entity
+ 
+architecture ifsc of ____ is
+begin
+ 
+ 
+end architecture
