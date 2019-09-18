@@ -1,0 +1,43 @@
+|address_decoder
+address[0] => Equal0.IN5
+address[0] => Equal1.IN5
+address[0] => Equal2.IN5
+address[0] => Equal3.IN5
+address[0] => Equal4.IN5
+address[0] => Equal5.IN5
+address[0] => Equal6.IN5
+address[0] => Equal7.IN5
+address[1] => Equal0.IN4
+address[1] => Equal1.IN4
+address[1] => Equal2.IN4
+address[1] => Equal3.IN4
+address[1] => Equal4.IN4
+address[1] => Equal5.IN4
+address[1] => Equal6.IN4
+address[1] => Equal7.IN4
+address[2] => Equal0.IN3
+address[2] => Equal1.IN3
+address[2] => Equal2.IN3
+address[2] => Equal3.IN3
+address[2] => Equal4.IN3
+address[2] => Equal5.IN3
+address[2] => Equal6.IN3
+address[2] => Equal7.IN3
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+ena => word_line.IN1
+word_line[0] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[1] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[2] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[3] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[4] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[5] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[6] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+word_line[7] <= word_line.DB_MAX_OUTPUT_PORT_TYPE
+
+
