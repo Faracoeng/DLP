@@ -27,6 +27,6 @@ begin
 	b_uns <= resize(unsigned(b), N+1);
 	x <= std_logic_vector(a_uns + b_uns); -- enviando a soma direto para a saida
 	-- OU da para fazer de outra forma
-	-- x_uns <= (a_uns + b_uns)
-	-- x = std_logic_vector(x)
+	-- x_uns <= (a_uns + b_uns);
+	-- x = std_logic_vector(x_uns);
 end architecture;
