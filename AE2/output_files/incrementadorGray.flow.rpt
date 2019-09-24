@@ -1,5 +1,5 @@
 Flow report for incrementadorGray
-Mon Sep 23 22:13:44 2019
+Tue Sep 24 15:14:55 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Flow Failed - Mon Sep 23 22:13:44 2019           ;
+; Flow Status               ; Flow Failed - Tue Sep 24 15:14:55 2019           ;
 ; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; incrementadorGray                                ;
 ; Top-level Entity Name     ; incrementadorGray                                ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/23/2019 22:13:42 ;
+; Start date & time ; 09/24/2019 15:14:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; incrementadorGray   ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.156928762200815      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.156934889325853      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057               ; --            ; --          ; Top            ;
@@ -86,7 +86,7 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 355 MB              ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 354 MB              ; 00:00:02                           ;
 ; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

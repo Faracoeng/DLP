@@ -12,20 +12,19 @@ entity incrementadorGray is
 end entity;
 
 architecture andre01 of incrementadorGray is
-        signal bin_i: unsigned(gray'range);
+        signal bin_i: std_logic_vector(gray'range);
 begin
 -- conversao de gray para binario
 loopForGenerate01:
 
         for i in bin_i'left-1 downto 0 generate
                 bin_i(i) <= gray(i) xor bin_i(i+1);
-        end generate;
-		  
-bin_i(N-1) <= gray(N-1);
+        end generate;	  
+		  bin_i(N-1) <= gray(N-1);
 
 -- incrementar binario
 
-bin_i <= std_logic_vector(unsigned(bin_i) + '1');
+bin_i <= std_logic_vector(resize((unsigned(bin_i) + 1),4));
 
 -- conversor de binario para gray
 loopForGenerate02:

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for incrementadorGray
-Mon Sep 23 22:13:44 2019
+Tue Sep 24 15:14:55 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Sep 23 22:13:44 2019                ;
+; Analysis & Synthesis Status ; Failed - Tue Sep 24 15:14:55 2019                ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; incrementadorGray                                ;
 ; Top-level Entity Name       ; incrementadorGray                                ;
@@ -154,16 +154,21 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Sep 23 22:13:41 2019
+    Info: Processing started: Tue Sep 24 15:14:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off incrementadorGray -c incrementadorGray
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file incrementadorGray.vhd
     Info (12022): Found design unit 1: incrementadorGray-andre01
     Info (12023): Found entity 1: incrementadorGray
-Error (10409): VHDL Type Conversion error at incrementadorGray.vhd(28): converted type of object near text or symbol "std_logic_vector" must match UNSIGNED type of target object File: /home/andre/DLP29006/DLP/AE2/incrementadorGray.vhd Line: 28
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 355 megabytes
-    Error: Processing ended: Mon Sep 23 22:13:44 2019
+Info (12127): Elaborating entity "incrementadorGray" for the top level hierarchy
+Error (10028): Can't resolve multiple constant drivers for net "bin_i[2]" at numeric_std.vhd(1244) File: /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/numeric_std.vhd Line: 1244
+Error (10029): Constant driver at incrementadorGray.vhd(21) File: /home/andre/DLP29006/DLP/AE2/incrementadorGray.vhd Line: 21
+Error (10028): Can't resolve multiple constant drivers for net "bin_i[1]" at numeric_std.vhd(1244) File: /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/numeric_std.vhd Line: 1244
+Error (10028): Can't resolve multiple constant drivers for net "bin_i[0]" at numeric_std.vhd(1244) File: /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/numeric_std.vhd Line: 1244
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 5 errors, 0 warnings
+    Error: Peak virtual memory: 354 megabytes
+    Error: Processing ended: Tue Sep 24 15:14:55 2019
     Error: Elapsed time: 00:00:03
     Error: Total CPU time (on all processors): 00:00:02
 
