@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
 entity incrementadorGray is
-        generic (N: natural := 4);
+        generic (N: natural := 10);
         port(
         gray :in std_logic_vector(N-1 downto 0);
         y  : out std_logic_vector(N-1 downto 0)
@@ -12,12 +12,13 @@ entity incrementadorGray is
 end entity;
 
 architecture andre01 of incrementadorGray is
+			-- bin_i -> apenas a versao binaria do array(Gray) de entrada
         signal bin_i: std_logic_vector(gray'range);
-		  signal bin_incrementado: std_logic_vector(gray'range);
+		  -- bin_incrementado sera a variavel contendo a versao binario ja incrementada em 1 bit
+		  signal bin_incrementado: std_logic_vector(gray'range);	-- Necessario criar dois (signal), pois nao e uma variavel e sim um fio.
 begin
--- conversao de gray para binario
+-- conversor de gray para binario
 loopForGenerate01:
-
         for i in bin_i'left-1 downto 0 generate
                 bin_i(i) <= gray(i) xor bin_i(i+1);
         end generate;	  
@@ -25,7 +26,7 @@ loopForGenerate01:
 
 -- incrementar binario
 
-bin_incrementado <= std_logic_vector((unsigned(bin_i) + 1));
+bin_incrementado <= std_logic_vector((unsigned(bin_i) + 1));	-- necessario converter para Unsigned para somar 1 bit
 
 -- conversor de binario para gray
 loopForGenerate02:
