@@ -1,5 +1,5 @@
 Flow report for incrementadorGray
-Tue Sep 24 15:14:55 2019
+Wed Sep 25 07:58:47 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Flow Failed - Tue Sep 24 15:14:55 2019           ;
+; Flow Status               ; Successful - Wed Sep 25 07:58:47 2019            ;
 ; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; incrementadorGray                                ;
 ; Top-level Entity Name     ; incrementadorGray                                ;
 ; Family                    ; Cyclone                                          ;
 ; Device                    ; EP1C3T100A8                                      ;
 ; Timing Models             ; Final                                            ;
-; Total logic elements      ; N/A until Partition Merge                        ;
-; Total pins                ; N/A until Partition Merge                        ;
-; Total virtual pins        ; N/A until Partition Merge                        ;
-; Total memory bits         ; N/A until Partition Merge                        ;
-; Total PLLs                ; N/A until Partition Merge                        ;
+; Total logic elements      ; 4                                                ;
+; Total pins                ; 8                                                ;
+; Total virtual pins        ; 0                                                ;
+; Total memory bits         ; 0                                                ;
+; Total PLLs                ; 0                                                ;
 +---------------------------+--------------------------------------------------+
 
 
@@ -60,25 +60,25 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/24/2019 15:14:53 ;
+; Start date & time ; 09/25/2019 07:58:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; incrementadorGray   ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                            ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.156934889325853      ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057               ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --          ; --             ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 277807426744019.156940912603227 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -86,18 +86,18 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 354 MB              ; 00:00:02                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 354 MB              ; 00:00:01                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                           ;
-+----------------------+-------------------+------------------+------------+----------------+
-; Module Name          ; Machine Hostname  ; OS Name          ; OS Version ; Processor type ;
-+----------------------+-------------------+------------------+------------+----------------+
-; Analysis & Synthesis ; sj-lin-labic-m202 ; Debian GNU/Linux ; 9          ; x86_64         ;
-+----------------------+-------------------+------------------+------------+----------------+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++----------------------+--------------------+------------------+------------+----------------+
+; Module Name          ; Machine Hostname   ; OS Name          ; OS Version ; Processor type ;
++----------------------+--------------------+------------------+------------+----------------+
+; Analysis & Synthesis ; sj-lin-sidi-744605 ; Debian GNU/Linux ; 9          ; x86_64         ;
++----------------------+--------------------+------------------+------------+----------------+
 
 
 ------------

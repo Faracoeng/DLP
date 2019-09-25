@@ -13,6 +13,7 @@ end entity;
 
 architecture andre01 of incrementadorGray is
         signal bin_i: std_logic_vector(gray'range);
+		  signal bin_incrementado: std_logic_vector(gray'range);
 begin
 -- conversao de gray para binario
 loopForGenerate01:
@@ -24,13 +25,13 @@ loopForGenerate01:
 
 -- incrementar binario
 
-bin_i <= std_logic_vector(resize((unsigned(bin_i) + 1),4));
+bin_incrementado <= std_logic_vector((unsigned(bin_i) + 1));
 
 -- conversor de binario para gray
 loopForGenerate02:
-        for i in bin_i'left-1 downto 0 generate
-                y(i) <= bin_i(i) xor bin_i(i+1);
+        for i in bin_incrementado'left-1 downto 0 generate
+                y(i) <= bin_incrementado(i) xor bin_incrementado(i+1);
         end generate;
-y(N-1) <= bin_i(N-1);
+y(N-1) <= bin_incrementado(N-1);
 
 end architecture;
