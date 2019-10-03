@@ -1,0 +1,9 @@
+|OReAND
+a => saida_x.IN0
+b => saida_x.IN1
+b => saida_y.IN0
+c => saida_y.IN1
+saida_x <= saida_x.DB_MAX_OUTPUT_PORT_TYPE
+saida_y <= saida_y.DB_MAX_OUTPUT_PORT_TYPE
+
+
