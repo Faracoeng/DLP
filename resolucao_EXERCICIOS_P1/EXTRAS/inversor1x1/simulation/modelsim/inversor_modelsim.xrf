@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, /home/andre/DLP29006/DLP/resolucao_EXERCICIOS_P1/EXTRAS/inversor1x1/inversor.vhd
+source_file = 1, /home/andre/DLP29006/DLP/resolucao_EXERCICIOS_P1/EXTRAS/inversor1x1/db/inversor.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = inversor
+instance = comp, \entrada~I\, entrada, inversor, 1
+instance = comp, \saida~I\, saida, inversor, 1

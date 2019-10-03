@@ -1,0 +1,14 @@
+|meuSomador
+in_01 => x1.IN0
+in_01 => x2.IN0
+in_01 => y.IN0
+in_02 => x1.IN1
+in_02 => x3.IN0
+in_02 => y.IN1
+Cin => x2.IN1
+Cin => x3.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
