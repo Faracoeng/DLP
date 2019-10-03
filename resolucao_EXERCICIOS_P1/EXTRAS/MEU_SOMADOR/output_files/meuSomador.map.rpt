@@ -1,5 +1,5 @@
 Analysis & Synthesis report for meuSomador
-Thu Oct  3 12:05:14 2019
+Thu Oct  3 15:41:37 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct  3 12:05:14 2019            ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct  3 15:41:37 2019            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; meuSomador                                       ;
 ; Top-level Entity Name              ; meuSomador                                       ;
@@ -228,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Oct  3 12:05:11 2019
+    Info: Processing started: Thu Oct  3 15:41:34 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off meuSomador -c meuSomador
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file meuSomador.vhd
@@ -243,8 +243,8 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 397 megabytes
-    Info: Processing ended: Thu Oct  3 12:05:14 2019
+    Info: Peak virtual memory: 385 megabytes
+    Info: Processing ended: Thu Oct  3 15:41:37 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

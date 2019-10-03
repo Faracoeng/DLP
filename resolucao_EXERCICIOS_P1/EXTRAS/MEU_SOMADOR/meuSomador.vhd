@@ -19,5 +19,4 @@ begin
 	Cout <= x1 OR x2 OR x3;
 	y <= in_01 XOR in_02;
 	s <= y XOR Cin;
-
 end andre01;
