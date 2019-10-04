@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/andre/DLP29006/DLP/resolucao_EXERCICIOS_P1/EXTRAS/p1-2016-2/Questao01/Questao02.vhd
+source_file = 1, /home/andre/DLP29006/DLP/resolucao_EXERCICIOS_P1/EXTRAS/p1-2016-2/Questao01/db/Questao02.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Questao02
+instance = comp, \Y~output\, Y~output, Questao02, 1
+instance = comp, \X~output\, X~output, Questao02, 1
+instance = comp, \B~input\, B~input, Questao02, 1
+instance = comp, \A~input\, A~input, Questao02, 1
+instance = comp, \Y~0\, Y~0, Questao02, 1
+instance = comp, \X~0\, X~0, Questao02, 1
