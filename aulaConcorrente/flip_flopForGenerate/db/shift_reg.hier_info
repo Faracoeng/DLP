@@ -1,0 +1,13 @@
+|shift_reg
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+rst => q[0].ACLR
+rst => q[1].ACLR
+rst => q[2].ACLR
+rst => q[3].ACLR
+din => q[0].DATAIN
+dout <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
