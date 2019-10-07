@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
     --use altera_mf.altera_mf_components.all;
     
 entity shift_reg is
-generic (N : natural := 8);
+generic (N : natural := 10);
     port
     (    
     clk, rst    : in std_LOGIC;
@@ -31,10 +31,11 @@ l1: for i in d'range generate
 		end process;
 	end generate;
 d(0) <= din;
-d(1) <= q(0);
-d(2) <= q(1);
-d(3) <= q(2);
-dout <= q(3);
+l3:
+for i in 0 to N-2 generate
+	d(i+1) <= q(i);
+end generate;
+dout <= q(N-1);
 
 end architecture;
 --------------segunda architecture
@@ -58,6 +59,6 @@ dout <= q(N-1);
 end architecture;
 --usar configuration sempre que tiver mais de uma architecture
 configuration shift_reg_cfg of shift_reg is
-	--for andre01 end for;
-	for andre02 end for;
+	for andre01 end for;
+	--for andre02 end for;
 end configuration;
