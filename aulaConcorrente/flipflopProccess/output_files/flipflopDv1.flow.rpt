@@ -1,5 +1,5 @@
 Flow report for flipflopDv1
-Mon Oct  7 07:46:39 2019
+Mon Oct  7 07:53:27 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -37,28 +37,22 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Flow Summary                                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct  7 07:46:39 2019            ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; flipflopDv1                                      ;
-; Top-level Entity Name              ; flipflopDv1                                      ;
-; Family                             ; Cyclone IV GX                                    ;
-; Total logic elements               ; 1                                                ;
-;     Total combinational functions  ; 0                                                ;
-;     Dedicated logic registers      ; 1                                                ;
-; Total registers                    ; 1                                                ;
-; Total pins                         ; 4                                                ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total GXB Receiver Channel PCS     ; 0                                                ;
-; Total GXB Receiver Channel PMA     ; 0                                                ;
-; Total GXB Transmitter Channel PCS  ; 0                                                ;
-; Total GXB Transmitter Channel PMA  ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------+--------------------------------------------------+
+; Flow Status               ; Successful - Mon Oct  7 07:53:27 2019            ;
+; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name             ; flipflopDv1                                      ;
+; Top-level Entity Name     ; flipflopDv1                                      ;
+; Family                    ; Cyclone                                          ;
+; Device                    ; EP1C3T100A8                                      ;
+; Timing Models             ; Final                                            ;
+; Total logic elements      ; 1                                                ;
+; Total pins                ; 4                                                ;
+; Total virtual pins        ; 0                                                ;
+; Total memory bits         ; 0                                                ;
+; Total PLLs                ; 0                                                ;
++---------------------------+--------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -66,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/07/2019 07:46:36 ;
+; Start date & time ; 10/07/2019 07:53:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; flipflopDv1         ;
 +-------------------+---------------------+
@@ -77,7 +71,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 277807426744019.157044519603159 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 277807426744019.157044560604711 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
@@ -92,8 +86,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 421 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 354 MB              ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
