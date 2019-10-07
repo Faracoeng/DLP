@@ -58,5 +58,6 @@ dout <= q(N-1);
 end architecture;
 --usar configuration sempre que tiver mais de uma architecture
 configuration shift_reg_cfg of shift_reg is
+	--for andre01 end for;
 	for andre02 end for;
 end configuration;
