@@ -46,7 +46,7 @@ begin
 --l2: for i in d'range generate n~ao precisa fazer aqui pois ja foi feito anteriormente
 	process (rst,clk) is
 		begin
-			if not(rst = '1') then    
+			if (rst = '1') then    
 					q <= (others => '0');
 			elsif(rising_edge(clk)) then
 					q <= din & q(0 to N-2);
