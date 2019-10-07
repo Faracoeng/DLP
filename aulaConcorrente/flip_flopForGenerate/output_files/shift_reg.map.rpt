@@ -1,5 +1,5 @@
 Analysis & Synthesis report for shift_reg
-Mon Oct  7 08:41:40 2019
+Mon Oct  7 08:49:10 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,7 +14,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |shift_reg
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |serial2par
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct  7 08:41:40 2019            ;
+; Analysis & Synthesis Status ; Successful - Mon Oct  7 08:49:10 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; shift_reg                                        ;
-; Top-level Entity Name       ; shift_reg                                        ;
+; Top-level Entity Name       ; serial2par                                       ;
 ; Family                      ; Cyclone                                          ;
-; Total logic elements        ; 10                                               ;
-; Total pins                  ; 4                                                ;
+; Total logic elements        ; 4                                                ;
+; Total pins                  ; 7                                                ;
 ; Total virtual pins          ; 0                                                ;
 ; Total memory bits           ; 0                                                ;
 ; Total PLLs                  ; 0                                                ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; shift_reg          ; shift_reg          ;
+; Top-level entity name                                                      ; serial2par         ; shift_reg          ;
 ; Family name                                                                ; Cyclone            ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,13 +153,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; shift_reg.vhd                    ; yes             ; User VHDL File  ; /home/aluno/DLP/aulaConcorrente/flip_flopForGenerate/shift_reg.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++-----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
++-----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; ../serial para par/serial2par.vhd ; yes             ; User VHDL File  ; /home/aluno/DLP/aulaConcorrente/serial para par/serial2par.vhd ;         ;
++-----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -167,9 +167,9 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 10    ;
+; Total logic elements                        ; 4     ;
 ;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 10    ;
+;     -- Register only                        ; 4     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
@@ -180,19 +180,19 @@ applicable agreement for further details.
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 10    ;
+;     -- normal mode                          ; 4     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 10    ;
+;     -- asynchronous clear/load mode         ; 4     ;
 ;                                             ;       ;
-; Total registers                             ; 10    ;
-; I/O pins                                    ; 4     ;
+; Total registers                             ; 4     ;
+; I/O pins                                    ; 7     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 10    ;
-; Total fan-out                               ; 31    ;
-; Average fan-out                             ; 2.21  ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 16    ;
+; Average fan-out                             ; 1.45  ;
 +---------------------------------------------+-------+
 
 
@@ -201,7 +201,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |shift_reg                 ; 10 (10)     ; 10           ; 0           ; 4    ; 0            ; 0 (0)        ; 10 (10)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |shift_reg          ; work         ;
+; |serial2par                ; 4 (4)       ; 4            ; 0           ; 7    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |serial2par         ; work         ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -211,23 +211,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 10    ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |shift_reg ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 10    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |serial2par ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -246,7 +246,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Oct  7 08:41:39 2019
+    Info: Processing started: Mon Oct  7 08:49:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shift_reg -c shift_reg
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 4 design units, including 1 entities, in source file shift_reg.vhd
@@ -254,16 +254,21 @@ Info (12021): Found 4 design units, including 1 entities, in source file shift_r
     Info (12022): Found design unit 2: shift_reg-andre02
     Info (12022): Found design unit 3: shift_reg_cfg
     Info (12023): Found entity 1: shift_reg
-Info (12127): Elaborating entity "shift_reg" for the top level hierarchy
+Info (12021): Found 4 design units, including 1 entities, in source file /home/aluno/DLP/aulaConcorrente/serial para par/serial2par.vhd
+    Info (12022): Found design unit 1: serial2par-andre01
+    Info (12022): Found design unit 2: serial2par-andre02
+    Info (12022): Found design unit 3: serial2par_cfg
+    Info (12023): Found entity 1: serial2par
+Info (12127): Elaborating entity "serial2par" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 14 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 10 logic cells
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 4 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 350 megabytes
-    Info: Processing ended: Mon Oct  7 08:41:40 2019
+    Info: Peak virtual memory: 347 megabytes
+    Info: Processing ended: Mon Oct  7 08:49:10 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
