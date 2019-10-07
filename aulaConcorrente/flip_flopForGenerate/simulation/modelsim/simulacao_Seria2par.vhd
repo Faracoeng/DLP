@@ -53,35 +53,9 @@ sim:/serial2par/d \
 sim:/serial2par/q
 force -freeze sim:/serial2par/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/serial2par/rst 1 0
-force -freeze sim:/serial2par/din 1 0
+force -freeze sim:/serial2par/din 0 0
+force -freeze sim:/serial2par/din 0 1
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+
+
+
