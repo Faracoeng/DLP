@@ -2,10 +2,10 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 ENTITY conta_up IS
-	GENERIC (
-		Nbit : NATURAL := 4;
-	Ncount : NATURAL := 10); -- 4 EL C1
-	-- generic (Nbit : natural := 26; Ncount : natural := 50000000); -- 47 EL C5; 60 EL C1
+	--GENERIC (
+	--	Nbit : NATURAL := 4;
+	--Ncount : NATURAL := 10); -- 4 EL C1
+	 generic (Nbit : natural := 26; Ncount : natural := 50000000); -- 47 EL C5; 60 EL C1
 	PORT (
 		rst : IN std_logic;
 		clk : IN std_logic;
