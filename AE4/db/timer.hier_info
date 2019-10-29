@@ -1,0 +1,47 @@
+|timer
+clk_50MHz => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+ssd_out_U_segundos[0] <= ssd_out_U_segundos[0].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[1] <= ssd_out_U_segundos[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[2] <= ssd_out_U_segundos[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[3] <= ssd_out_U_segundos[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[4] <= ssd_out_U_segundos[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[5] <= ssd_out_U_segundos[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_segundos[6] <= ssd_out_U_segundos[6].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[0] <= ssd_out_D_segundos[0].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[1] <= ssd_out_D_segundos[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[2] <= ssd_out_D_segundos[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[3] <= ssd_out_D_segundos[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[4] <= ssd_out_D_segundos[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[5] <= ssd_out_D_segundos[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_segundos[6] <= ssd_out_D_segundos[6].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[0] <= ssd_out_U_minutos[0].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[1] <= ssd_out_U_minutos[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[2] <= ssd_out_U_minutos[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[3] <= ssd_out_U_minutos[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[4] <= ssd_out_U_minutos[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[5] <= ssd_out_U_minutos[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_minutos[6] <= ssd_out_U_minutos[6].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[0] <= ssd_out_D_minutos[0].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[1] <= ssd_out_D_minutos[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[2] <= ssd_out_D_minutos[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[3] <= ssd_out_D_minutos[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[4] <= ssd_out_D_minutos[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[5] <= ssd_out_D_minutos[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_minutos[6] <= ssd_out_D_minutos[6].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[0] <= ssd_out_U_horas[0].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[1] <= ssd_out_U_horas[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[2] <= ssd_out_U_horas[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[3] <= ssd_out_U_horas[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[4] <= ssd_out_U_horas[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[5] <= ssd_out_U_horas[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_U_horas[6] <= ssd_out_U_horas[6].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[1] <= ssd_out_D_horas[1].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[2] <= ssd_out_D_horas[2].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[3] <= ssd_out_D_horas[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[4] <= ssd_out_D_horas[4].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[5] <= ssd_out_D_horas[5].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out_D_horas[6] <= ssd_out_D_horas[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
