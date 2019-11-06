@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sinaleira
-Wed Nov  6 08:58:40 2019
+Wed Nov  6 09:16:55 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,7 +10,15 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |sinaleira|pr_state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Source assignments for Top-level Entity: |sinaleira
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -36,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Nov  6 08:58:40 2019                ;
+; Analysis & Synthesis Status ; Successful - Wed Nov  6 09:16:55 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; sinaleira                                        ;
 ; Top-level Entity Name       ; sinaleira                                        ;
 ; Family                      ; Cyclone                                          ;
-; Total logic elements        ; N/A until Partition Merge                        ;
-; Total pins                  ; N/A until Partition Merge                        ;
-; Total virtual pins          ; N/A until Partition Merge                        ;
-; Total memory bits           ; N/A until Partition Merge                        ;
-; Total PLLs                  ; N/A until Partition Merge                        ;
+; Total logic elements        ; 0                                                ;
+; Total pins                  ; 8                                                ;
+; Total virtual pins          ; 0                                                ;
+; Total memory bits           ; 0                                                ;
+; Total PLLs                  ; 0                                                ;
 +-----------------------------+--------------------------------------------------+
 
 
@@ -148,21 +156,157 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; sinaleira.vhd                    ; yes             ; User VHDL File  ; /home/aluno/DLP/maquinaDeEstados/sinaleira-06_11/sinaleira.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 8     ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; |sinaleira                 ; 0 (0)       ; 0            ; 0           ; 8    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sinaleira          ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |sinaleira|pr_state                                               ;
++-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; pr_state.RG ; pr_state.YR ; pr_state.GR ; pr_state.RY ; pr_state.YY ;
++-------------+-------------+-------------+-------------+-------------+-------------+
+; pr_state.YY ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; pr_state.RY ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; pr_state.GR ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; pr_state.YR ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; pr_state.RG ; 1           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; pr_state.YY                           ; Lost fanout        ;
+; pr_state.RY                           ; Lost fanout        ;
+; pr_state.GR                           ; Lost fanout        ;
+; pr_state.YR                           ; Lost fanout        ;
+; pr_state.RG                           ; Lost fanout        ;
+; Total Number of Removed Registers = 5 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Source assignments for Top-level Entity: |sinaleira  ;
++--------------------------+---------+------+----------+
+; Assignment               ; Value   ; From ; To       ;
++--------------------------+---------+------+----------+
+; STATE_MACHINE_PROCESSING ; ONE_HOT ; -    ; pr_state ;
++--------------------------+---------+------+----------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Nov  6 08:58:39 2019
+    Info: Processing started: Wed Nov  6 09:16:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sinaleira -c sinaleira
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Error (10522): VHDL Syntax error at sinaleira.vhd(143): experienced unexpected end-of-file ;  expecting "end", or "(", or an identifier, or a sequential statement File: /home/aluno/DLP/maquinaDeEstados/sinaleira-06_11/sinaleira.vhd Line: 143
-Info (12021): Found 0 design units, including 0 entities, in source file sinaleira.vhd
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 355 megabytes
-    Error: Processing ended: Wed Nov  6 08:58:40 2019
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12021): Found 2 design units, including 1 entities, in source file sinaleira.vhd
+    Info (12022): Found design unit 1: sinaleira-ifsc_v1
+    Info (12023): Found entity 1: sinaleira
+Info (12127): Elaborating entity "sinaleira" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "RD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "YD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "GD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "RD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "YD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(7): used implicit default value for signal "GD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at sinaleira.vhd(13): object "pr_state" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at sinaleira.vhd(13): used implicit default value for signal "nx_state" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RD1" is stuck at GND
+    Warning (13410): Pin "YD1" is stuck at GND
+    Warning (13410): Pin "GD1" is stuck at GND
+    Warning (13410): Pin "RD2" is stuck at GND
+    Warning (13410): Pin "YD2" is stuck at GND
+    Warning (13410): Pin "GD2" is stuck at GND
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rst"
+    Warning (15610): No output dependent on input pin "clk"
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 6 output pins
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 355 megabytes
+    Info: Processing ended: Wed Nov  6 09:16:55 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

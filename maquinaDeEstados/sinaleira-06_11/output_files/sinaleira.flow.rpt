@@ -1,5 +1,5 @@
 Flow report for sinaleira
-Wed Nov  6 08:58:40 2019
+Wed Nov  6 09:16:55 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Flow Failed - Wed Nov  6 08:58:40 2019           ;
+; Flow Status               ; Successful - Wed Nov  6 09:16:55 2019            ;
 ; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; sinaleira                                        ;
 ; Top-level Entity Name     ; sinaleira                                        ;
 ; Family                    ; Cyclone                                          ;
 ; Device                    ; EP1C3T100A8                                      ;
 ; Timing Models             ; Final                                            ;
-; Total logic elements      ; N/A until Partition Merge                        ;
-; Total pins                ; N/A until Partition Merge                        ;
-; Total virtual pins        ; N/A until Partition Merge                        ;
-; Total memory bits         ; N/A until Partition Merge                        ;
-; Total PLLs                ; N/A until Partition Merge                        ;
+; Total logic elements      ; 0                                                ;
+; Total pins                ; 8                                                ;
+; Total virtual pins        ; 0                                                ;
+; Total memory bits         ; 0                                                ;
+; Total PLLs                ; 0                                                ;
 +---------------------------+--------------------------------------------------+
 
 
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2019 08:58:40 ;
+; Start date & time ; 11/06/2019 09:16:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sinaleira           ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 30902523540312.157304152003828 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 30902523540312.157304261304196 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
