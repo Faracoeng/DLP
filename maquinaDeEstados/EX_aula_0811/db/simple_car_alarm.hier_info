@@ -1,0 +1,16 @@
+|simple_car_alarm
+clk => pr_state~1.DATAIN
+rst => pr_state~3.DATAIN
+remote => nx_state.DATAA
+remote => nx_state.wait1.DATAB
+remote => Selector2.IN4
+remote => Selector0.IN1
+remote => Selector1.IN1
+remote => nx_state.DATAA
+remote => Selector3.IN1
+sensors => nx_state.OUTPUTSELECT
+sensors => nx_state.OUTPUTSELECT
+sensors => Selector3.IN3
+siren <= siren.DB_MAX_OUTPUT_PORT_TYPE
+
+
