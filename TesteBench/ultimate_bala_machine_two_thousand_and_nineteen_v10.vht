@@ -89,7 +89,7 @@ END PROCESS;
 
  
 -- CLOCK COM PERIODO DE 2*tclk (COM CÓDIGO CONCORRENTE)
-clk <= not clk after tclk;
+--clk <= not clk after tclk;
  
 -- CLOCK COM PERIODO DE 2*tclk (COM CÓDIGO SEQUENCIAL)
 
