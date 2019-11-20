@@ -38,33 +38,7 @@ begin
 			E <= '0';
 			-- output <= < value > ;
 		CASE pr_state IS
-			WHEN A =>
-				output <= < value > ;   -- apenas se diferente do valor default
-				IF (input =< value >) THEN
-					nx_state <= B;
-				--	...
-				ELSE
-					nx_state <= A;
-				END IF;
-			WHEN B =>
-				output <= < value > ; -- apenas se diferente do valor default
-				IF (input =< value >) THEN
-					nx_state <= C;
-					--...
-				ELSE
-					nx_state <= B;
-				END IF;
-			WHEN ...
-		END CASE;
-	END PROCESS;
-	------Seção de Saída (opcional):-------
-	PROCESS (clk, rst)
-	BEGIN
-		IF (rst = '1') THEN
-			new_output <= < value > ;
-		ELSIF (clk'EVENT AND clk = '1') THEN --or clk='0'
-			new_output <= output;
-		END IF;
+			
 	END PROCESS;
 ---------------------------------------------------------------------------------------------------
 
