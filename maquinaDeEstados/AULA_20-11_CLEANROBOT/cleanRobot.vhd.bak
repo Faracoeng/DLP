@@ -1,0 +1,21 @@
+library ieee
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity cleanRobot is
+	port(
+		-- Input ports
+		S, I, clk, rst : IN STD_LOGIC;
+		-- Output ports
+		A, L, D, E	: out <type>
+	);
+end cleanRobot;
+
+architecture andre01 of cleanRobot is
+
+
+begin
+
+
+
+end architecture;
