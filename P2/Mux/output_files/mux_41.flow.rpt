@@ -1,5 +1,5 @@
 Flow report for mux_41
-Mon Nov 25 08:55:25 2019
+Mon Nov 25 09:17:44 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Successful - Mon Nov 25 08:55:25 2019            ;
+; Flow Status               ; Successful - Mon Nov 25 09:17:44 2019            ;
 ; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; mux_41                                           ;
 ; Top-level Entity Name     ; questao_02                                       ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2019 08:54:53 ;
+; Start date & time ; 11/25/2019 09:17:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mux_41              ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 30902523540312.157468289304920 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 30902523540312.157468426206589 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; questao_02  ; Top            ;
@@ -88,8 +88,7 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 354 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 315 MB              ; 00:00:00                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -99,7 +98,6 @@ applicable agreement for further details.
 ; Module Name          ; Machine Hostname   ; OS Name          ; OS Version ; Processor type ;
 +----------------------+--------------------+------------------+------------+----------------+
 ; Analysis & Synthesis ; sj-lin-sidi-756047 ; Debian GNU/Linux ; 9          ; x86_64         ;
-; EDA Netlist Writer   ; sj-lin-sidi-756047 ; Debian GNU/Linux ; 9          ; x86_64         ;
 +----------------------+--------------------+------------------+------------+----------------+
 
 
@@ -107,7 +105,6 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off mux_41 -c mux_41
-quartus_eda --read_settings_files=on --write_settings_files=off mux_41 -c mux_41 --gen_testbench
 
 
 

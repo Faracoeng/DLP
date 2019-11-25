@@ -90,7 +90,7 @@ BEGIN
 		b_in <= "1011";
 		wait for 3 ns;
 		b_in <= "0101";
-		wait for 3 ns;
+		wait;
 	end process;
 	
 	c_in <=  "1101", "0000" after 3 ns, "1111" after 6 ns, "1011" after 10 ns;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mux_41
-Mon Nov 25 08:54:54 2019
+Mon Nov 25 09:17:44 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Nov 25 08:54:54 2019            ;
+; Analysis & Synthesis Status ; Successful - Mon Nov 25 09:17:44 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; mux_41                                           ;
 ; Top-level Entity Name       ; questao_02                                       ;
@@ -283,7 +283,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Nov 25 08:54:53 2019
+    Info: Processing started: Mon Nov 25 09:17:42 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mux_41 -c mux_41
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mux_41.vhd
@@ -312,8 +312,8 @@ Info (21057): Implemented 36 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 354 megabytes
-    Info: Processing ended: Mon Nov 25 08:54:54 2019
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Nov 25 09:17:44 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
