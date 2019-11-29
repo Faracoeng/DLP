@@ -1,0 +1,25 @@
+|maquina_estado
+clk => prstate~1.DATAIN
+rst => prstate~3.DATAIN
+sensor => nxstate.OUTPUTSELECT
+sensor => nxstate.OUTPUTSELECT
+sensor => nxstate.R1.DATAB
+sensor => nxstate.R3.DATAB
+sensor => Selector2.IN4
+sensor => nxstate.I2.DATAB
+sensor => nxstate.I4.DATAB
+sensor => Selector0.IN2
+sensor => nxstate.A2.DATAB
+sensor => nxstate.A4.DATAB
+inicia => nxstate.DATAA
+inicia => Selector3.IN5
+inicia => nxstate.W1.DATAB
+inicia => nxstate.DATAA
+inicia => Selector4.IN1
+inicia => Selector5.IN1
+avanca <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+limpa <= limpa.DB_MAX_OUTPUT_PORT_TYPE
+direita <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+esquerda <= esquerda.DB_MAX_OUTPUT_PORT_TYPE
+
+
