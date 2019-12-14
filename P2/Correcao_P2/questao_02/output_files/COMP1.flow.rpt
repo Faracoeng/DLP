@@ -1,5 +1,5 @@
 Flow report for COMP1
-Sat Dec 14 14:36:52 2019
+Sat Dec 14 15:36:07 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Successful - Sat Dec 14 14:36:52 2019            ;
+; Flow Status               ; Successful - Sat Dec 14 15:36:07 2019            ;
 ; Quartus II 32-bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; COMP1                                            ;
 ; Top-level Entity Name     ; COMP2                                            ;
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/14/2019 14:36:50 ;
+; Start date & time ; 12/14/2019 15:36:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; COMP1               ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157634501013339      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157634856514360      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057               ; --            ; COMP2       ; Top            ;
@@ -87,8 +87,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 354 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 354 MB              ; 00:00:02                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

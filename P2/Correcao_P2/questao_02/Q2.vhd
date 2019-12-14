@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity Q2 is
+	generic(n: natural := 8);
+	port(
+		op: in std_logic;
+		clk, rst: in std_logic;
+		in1, in2: in std_logic_vector(n-1 downto 0);
+		y: out std_logic_vector(n-1 downto 0)
+	);
+end Q2;
+
+
+architecture andre_v3 of Q2 is
+
+begin
+
+
+
+end architecture;

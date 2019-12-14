@@ -1,5 +1,5 @@
 Analysis & Synthesis report for COMP1
-Sat Dec 14 14:36:52 2019
+Sat Dec 14 15:36:07 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 14 14:36:52 2019            ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 14 15:36:07 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; COMP1                                            ;
 ; Top-level Entity Name       ; COMP2                                            ;
@@ -247,7 +247,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Dec 14 14:36:49 2019
+    Info: Processing started: Sat Dec 14 15:36:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off COMP1 -c COMP1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file COMP1.vhd
@@ -256,6 +256,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file COMP1.v
 Info (12021): Found 2 design units, including 1 entities, in source file COMP2.vhd
     Info (12022): Found design unit 1: COMP2-andre_v1
     Info (12023): Found entity 1: COMP2
+Info (12021): Found 2 design units, including 1 entities, in source file Q2.vhd
+    Info (12022): Found design unit 1: Q2-andre_v3
+    Info (12023): Found entity 1: Q2
 Info (12127): Elaborating entity "COMP2" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -265,7 +268,7 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 354 megabytes
-    Info: Processing ended: Sat Dec 14 14:36:52 2019
+    Info: Processing ended: Sat Dec 14 15:36:07 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
