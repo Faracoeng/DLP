@@ -1,0 +1,57 @@
+# do Q1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_01/Q1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Q1
+# -- Compiling architecture andre_v1 of Q1
+# 
+vsim -voptargs=+acc work.q1(andre_v1)
+# vsim -voptargs=+acc work.q1(andre_v1) 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 Linux 4.9.0-11-amd64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.q1(andre_v1)
+force -freeze sim:/q1/entrada(7) 0 0
+force -freeze sim:/q1/entrada(6) 0 0
+force -freeze sim:/q1/entrada(4) 0 0
+force -freeze sim:/q1/entrada(3) 0 0
+force -freeze sim:/q1/entrada(2) 0 0
+force -freeze sim:/q1/entrada(1) 0 0
+force -freeze sim:/q1/entrada(0) 0 0
+run
+add wave -position insertpoint  \
+sim:/q1/N \
+sim:/q1/entrada \
+sim:/q1/saida
+run
+run
+run
+force -freeze sim:/q1/entrada(5) 0 0
+run
+run
+force -freeze sim:/q1/entrada(7) 1 0
+run
+force -freeze sim:/q1/entrada(6) 1 0
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_01/simulation/modelsim/wave.do

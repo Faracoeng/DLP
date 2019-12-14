@@ -1,0 +1,34 @@
+|Q1
+entrada[0] => verificaBits.OUTPUTSELECT
+entrada[0] => verificaBits.OUTPUTSELECT
+entrada[0] => verificaBits.OUTPUTSELECT
+entrada[0] => verificaBits.OUTPUTSELECT
+entrada[1] => verificaBits.OUTPUTSELECT
+entrada[1] => verificaBits.OUTPUTSELECT
+entrada[1] => verificaBits.OUTPUTSELECT
+entrada[1] => verificaBits.OUTPUTSELECT
+entrada[2] => verificaBits.OUTPUTSELECT
+entrada[2] => verificaBits.OUTPUTSELECT
+entrada[2] => verificaBits.OUTPUTSELECT
+entrada[2] => verificaBits.OUTPUTSELECT
+entrada[3] => verificaBits.OUTPUTSELECT
+entrada[3] => verificaBits.OUTPUTSELECT
+entrada[3] => verificaBits.OUTPUTSELECT
+entrada[3] => verificaBits.OUTPUTSELECT
+entrada[4] => verificaBits.OUTPUTSELECT
+entrada[4] => verificaBits.OUTPUTSELECT
+entrada[4] => verificaBits.OUTPUTSELECT
+entrada[4] => verificaBits.OUTPUTSELECT
+entrada[5] => verificaBits.OUTPUTSELECT
+entrada[5] => verificaBits.OUTPUTSELECT
+entrada[5] => verificaBits.OUTPUTSELECT
+entrada[6] => verificaBits.OUTPUTSELECT
+entrada[6] => verificaBits.OUTPUTSELECT
+entrada[7] => Add0.IN2
+entrada[7] => verificaBits.DATAA
+saida[0] <= verificaBits.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= verificaBits.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= verificaBits.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= verificaBits.DB_MAX_OUTPUT_PORT_TYPE
+
+
