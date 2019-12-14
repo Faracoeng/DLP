@@ -1,5 +1,5 @@
 Analysis & Synthesis report for COMP1
-Sat Dec 14 14:19:02 2019
+Sat Dec 14 14:36:52 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,7 +14,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |COMP1
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |COMP2
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 14 14:19:02 2019            ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 14 14:36:52 2019            ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; COMP1                                            ;
-; Top-level Entity Name       ; COMP1                                            ;
+; Top-level Entity Name       ; COMP2                                            ;
 ; Family                      ; Cyclone                                          ;
-; Total logic elements        ; 16                                               ;
-; Total pins                  ; 25                                               ;
+; Total logic elements        ; 8                                                ;
+; Total pins                  ; 18                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; Total memory bits           ; 0                                                ;
 ; Total PLLs                  ; 0                                                ;
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP1C3T100A8        ;                    ;
-; Top-level entity name                                                      ; COMP1              ; COMP1              ;
+; Top-level entity name                                                      ; COMP2              ; COMP1              ;
 ; Family name                                                                ; Cyclone            ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,7 +159,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; COMP1.vhd                        ; yes             ; User VHDL File  ; /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd ;         ;
+; COMP2.vhd                        ; yes             ; User VHDL File  ; /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd ;         ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
@@ -168,33 +168,32 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 16    ;
-;     -- Combinational with no register       ; 16    ;
-;     -- Register only                        ; 0     ;
+; Total logic elements                        ; 8     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 8     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 7     ;
-;     -- 2 input functions                    ; 9     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 9     ;
-;     -- arithmetic mode                      ; 7     ;
+;     -- normal mode                          ; 8     ;
+;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
+;     -- asynchronous clear/load mode         ; 8     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-; Total logic cells in carry chains           ; 8     ;
-; I/O pins                                    ; 25    ;
-; Maximum fan-out node                        ; OP    ;
+; Total registers                             ; 8     ;
+; I/O pins                                    ; 18    ;
+; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 47    ;
-; Average fan-out                             ; 1.15  ;
+; Total fan-out                               ; 32    ;
+; Average fan-out                             ; 1.23  ;
 +---------------------------------------------+-------+
 
 
@@ -203,7 +202,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |COMP1                     ; 16 (16)     ; 0            ; 0           ; 25   ; 0            ; 16 (16)      ; 0 (0)             ; 0 (0)            ; 8 (8)           ; 0 (0)      ; |COMP1              ; work         ;
+; |COMP2                     ; 8 (8)       ; 8            ; 0           ; 18   ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |COMP2              ; work         ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -213,10 +212,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -224,11 +223,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |COMP1 ;
+; Parameter Settings for User Entity Instance: Top-level Entity: |COMP2 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; N              ; 8     ; Signed Integer                               ;
+; n              ; 8     ; Signed Integer                               ;
 +----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -248,23 +247,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Dec 14 14:19:00 2019
+    Info: Processing started: Sat Dec 14 14:36:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off COMP1 -c COMP1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file COMP1.vhd
     Info (12022): Found design unit 1: COMP1-andre_v1
     Info (12023): Found entity 1: COMP1
-Info (12127): Elaborating entity "COMP1" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file COMP2.vhd
+    Info (12022): Found design unit 1: COMP2-andre_v1
+    Info (12023): Found entity 1: COMP2
+Info (12127): Elaborating entity "COMP2" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 16 logic cells
+    Info (21061): Implemented 8 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 354 megabytes
-    Info: Processing ended: Sat Dec 14 14:19:02 2019
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Dec 14 14:36:52 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

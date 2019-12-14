@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Dec 14 14:19:02 2019
+Analysis & Synthesis Status : Successful - Sat Dec 14 14:36:52 2019
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : COMP1
-Top-level Entity Name : COMP1
+Top-level Entity Name : COMP2
 Family : Cyclone
-Total logic elements : 16
-Total pins : 25
+Total logic elements : 8
+Total pins : 18
 Total virtual pins : 0
 Total memory bits : 0
 Total PLLs : 0
