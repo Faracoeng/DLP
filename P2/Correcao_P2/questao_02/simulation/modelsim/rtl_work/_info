@@ -1,0 +1,116 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/simulation/modelsim
+Ecomp1
+Z1 w1576343546
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/simulation/modelsim
+Z6 8/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd
+Z7 F/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd
+l0
+L5
+V6QcMJJf<kMkjcB:SB<IQ11
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1576434383.348512
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd|
+Z11 !s107 /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 ;PHYj0m1]SlmfPdYc3kMH1
+!i10b 1
+Aandre_v1
+R2
+R3
+R4
+DEx4 work 5 comp1 0 22 6QcMJJf<kMkjcB:SB<IQ11
+l22
+L14
+Vm_RgX34JUBdcJZA5lzSV]2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 a`i30[P1Q?i>;@8TYh6zL0
+!i10b 1
+Ecomp2
+Z14 w1576426724
+R2
+R3
+R4
+R5
+Z15 8/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd
+Z16 F/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd
+l0
+L5
+VECT7DEN9KWEV>QJ_OQXI^1
+R8
+31
+Z17 !s108 1576434383.549417
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd|
+Z19 !s107 /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd|
+R12
+R13
+!s100 6lYfnNR=cBQG4EfLHbGS^1
+!i10b 1
+Aandre_v1
+R2
+R3
+R4
+DEx4 work 5 comp2 0 22 ECT7DEN9KWEV>QJ_OQXI^1
+l18
+L14
+V7zk8389SYeo2B6h`T4Edz2
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 Gj4][EAAgQBg7O;g8H]?`0
+!i10b 1
+Eq2
+Z20 w1576433378
+R2
+R3
+R4
+R5
+Z21 8/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/Q2.vhd
+Z22 F/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/Q2.vhd
+l0
+L6
+V`gzW^L0Va^_bN<?ba?UDF2
+!s100 <Iee9mQAAmM_bz5_TfHKX0
+R8
+31
+!i10b 1
+Z23 !s108 1576434383.585128
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/Q2.vhd|
+Z25 !s107 /home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/Q2.vhd|
+R12
+R13
+Aandre_v3
+R2
+R3
+R4
+DEx4 work 2 q2 0 22 `gzW^L0Va^_bN<?ba?UDF2
+l42
+L17
+Vj]Z`2@8bNld:AcEoHP7B`1
+!s100 :eRBedhC__MVm?UIT_Vmk1
+R8
+31
+!i10b 1
+R23
+R24
+R25
+R12
+R13

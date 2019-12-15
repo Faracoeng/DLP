@@ -1,0 +1,582 @@
+TimeQuest Timing Analyzer report for COMP1
+Sun Dec 15 15:12:14 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk_in'
+ 12. Hold: 'clk_in'
+ 13. Minimum Pulse Width: 'clk_in'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Setup Transfers
+ 19. Hold Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; COMP1                                                              ;
+; Device Family      ; Cyclone                                                            ;
+; Device Name        ; EP1C3T100A8                                                        ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Slow Model                                                         ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; clk_in     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_in } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Fmax Summary                                                                                      ;
++------------+-----------------+------------+-------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                  ;
++------------+-----------------+------------+-------------------------------------------------------+
+; 332.89 MHz ; 275.03 MHz      ; clk_in     ; limit due to high minimum pulse width violation (tch) ;
++------------+-----------------+------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Setup Summary                   ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; clk_in ; -2.004 ; -13.625       ;
++--------+--------+---------------+
+
+
++--------------------------------+
+; Hold Summary                   ;
++--------+-------+---------------+
+; Clock  ; Slack ; End Point TNS ;
++--------+-------+---------------+
+; clk_in ; 1.537 ; 0.000         ;
++--------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------+
+; Minimum Pulse Width Summary     ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; clk_in ; -1.583 ; -64.847       ;
++--------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk_in'                                                                                                                                 ;
++--------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.004 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.967      ;
+; -2.004 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.967      ;
+; -2.004 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.967      ;
+; -1.925 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.888      ;
+; -1.925 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.888      ;
+; -1.925 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.888      ;
+; -1.850 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.813      ;
+; -1.850 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.813      ;
+; -1.850 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.813      ;
+; -1.789 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.752      ;
+; -1.785 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.748      ;
+; -1.755 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.718      ;
+; -1.755 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.718      ;
+; -1.755 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.718      ;
+; -1.752 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.715      ;
+; -1.752 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.715      ;
+; -1.752 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.715      ;
+; -1.721 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.684      ;
+; -1.721 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.684      ;
+; -1.721 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.684      ;
+; -1.709 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.672      ;
+; -1.706 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.669      ;
+; -1.705 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.668      ;
+; -1.643 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.606      ;
+; -1.643 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.606      ;
+; -1.643 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.606      ;
+; -1.637 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.600      ;
+; -1.629 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.592      ;
+; -1.566 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.529      ;
+; -1.566 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.529      ;
+; -1.566 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.529      ;
+; -1.557 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.520      ;
+; -1.556 ; COMP2:registrador_02|y_aux[6] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.519      ;
+; -1.549 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.512      ;
+; -1.537 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.500      ;
+; -1.530 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.493      ;
+; -1.530 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.493      ;
+; -1.530 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.493      ;
+; -1.504 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.467      ;
+; -1.477 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.440      ;
+; -1.457 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.420      ;
+; -1.426 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.389      ;
+; -1.424 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.387      ;
+; -1.422 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.385      ;
+; -1.422 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.385      ;
+; -1.422 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.385      ;
+; -1.397 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.360      ;
+; -1.380 ; COMP2:registrador_01|y_aux[6] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.343      ;
+; -1.377 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.340      ;
+; -1.346 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.309      ;
+; -1.311 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.274      ;
+; -1.296 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.259      ;
+; -1.266 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.229      ;
+; -1.231 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.194      ;
+; -1.216 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.179      ;
+; -1.201 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.164      ;
+; -1.082 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.045      ;
+; -1.081 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 2.044      ;
+; -0.944 ; COMP2:registrador_02|y_aux[6] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.907      ;
+; -0.940 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.903      ;
+; -0.939 ; COMP2:registrador_02|y_aux[7] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.902      ;
+; -0.937 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[0] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.900      ;
+; -0.809 ; COMP2:registrador_01|y_aux[7] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.772      ;
+; -0.800 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.763      ;
+; -0.773 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[0] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.736      ;
+; -0.756 ; COMP2:registrador_01|y_aux[6] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.719      ;
+; -0.753 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.716      ;
+; -0.747 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.710      ;
+; -0.654 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.617      ;
+; -0.619 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.582      ;
+; -0.604 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.567      ;
+; -0.589 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 1.552      ;
++--------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk_in'                                                                                                                                 ;
++-------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.537 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.552      ;
+; 1.552 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.567      ;
+; 1.567 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.582      ;
+; 1.602 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.617      ;
+; 1.695 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.710      ;
+; 1.701 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.716      ;
+; 1.704 ; COMP2:registrador_01|y_aux[6] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.719      ;
+; 1.721 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[0] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.736      ;
+; 1.748 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.763      ;
+; 1.757 ; COMP2:registrador_01|y_aux[7] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.772      ;
+; 1.885 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[0] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.900      ;
+; 1.887 ; COMP2:registrador_02|y_aux[7] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.902      ;
+; 1.888 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.903      ;
+; 1.892 ; COMP2:registrador_02|y_aux[6] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 1.907      ;
+; 2.029 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.044      ;
+; 2.030 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.045      ;
+; 2.136 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.151      ;
+; 2.151 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.166      ;
+; 2.166 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.181      ;
+; 2.201 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.216      ;
+; 2.229 ; COMP2:registrador_01|y_aux[5] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.244      ;
+; 2.244 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.259      ;
+; 2.279 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.294      ;
+; 2.310 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.325      ;
+; 2.313 ; COMP2:registrador_01|y_aux[6] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.328      ;
+; 2.330 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.345      ;
+; 2.357 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.372      ;
+; 2.357 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.372      ;
+; 2.358 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.373      ;
+; 2.358 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.373      ;
+; 2.358 ; COMP2:registrador_01|y_aux[3] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.373      ;
+; 2.388 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.403      ;
+; 2.408 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.423      ;
+; 2.435 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.450      ;
+; 2.466 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.481      ;
+; 2.468 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.483      ;
+; 2.468 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.483      ;
+; 2.468 ; COMP2:registrador_01|y_aux[2] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.483      ;
+; 2.484 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[1] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.499      ;
+; 2.486 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.501      ;
+; 2.491 ; COMP2:registrador_02|y_aux[6] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.506      ;
+; 2.514 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.529      ;
+; 2.514 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.529      ;
+; 2.514 ; COMP2:registrador_01|y_aux[4] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.529      ;
+; 2.562 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[2] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.577      ;
+; 2.564 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.579      ;
+; 2.583 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.598      ;
+; 2.583 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.598      ;
+; 2.583 ; COMP2:registrador_02|y_aux[1] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.598      ;
+; 2.638 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.653      ;
+; 2.639 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.654      ;
+; 2.640 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[3] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.655      ;
+; 2.661 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.676      ;
+; 2.661 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.676      ;
+; 2.661 ; COMP2:registrador_02|y_aux[2] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.676      ;
+; 2.694 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.709      ;
+; 2.694 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.709      ;
+; 2.694 ; COMP2:registrador_01|y_aux[1] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.709      ;
+; 2.703 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.718      ;
+; 2.703 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.718      ;
+; 2.703 ; COMP2:registrador_02|y_aux[4] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.718      ;
+; 2.716 ; COMP2:registrador_02|y_aux[5] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.731      ;
+; 2.718 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[4] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.733      ;
+; 2.794 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.809      ;
+; 2.794 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.809      ;
+; 2.794 ; COMP2:registrador_01|y_aux[0] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.809      ;
+; 2.863 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.878      ;
+; 2.863 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.878      ;
+; 2.863 ; COMP2:registrador_02|y_aux[3] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.878      ;
+; 2.946 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[5] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.961      ;
+; 2.946 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[6] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.961      ;
+; 2.946 ; COMP2:registrador_02|y_aux[0] ; COMP2:registrador_Saida|y_aux[7] ; clk_in       ; clk_in      ; 0.000        ; 0.000      ; 2.961      ;
++-------+-------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clk_in'                                                                                      ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+; -1.583 ; 1.000        ; 2.583          ; Port Rate        ; clk_in ; Rise       ; clk_in                           ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[0]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[0]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[1]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[1]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[2]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[2]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[3]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[3]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[4]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[4]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[5]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[5]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[6]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[6]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[7]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_01|y_aux[7]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[0]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[0]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[1]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[1]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[2]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[2]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[3]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[3]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[4]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[4]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[5]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[5]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[6]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[6]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[7]    ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_02|y_aux[7]    ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[0] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[0] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[1] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[1] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[2] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[2] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[3] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[3] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[4] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[4] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[5] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[5] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[6] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[6] ;
+; -1.318 ; 0.500        ; 1.818          ; High Pulse Width ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[7] ;
+; -1.318 ; 0.500        ; 1.818          ; Low Pulse Width  ; clk_in ; Rise       ; COMP2:registrador_Saida|y_aux[7] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; clk_in|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; clk_in|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_01|y_aux[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_01|y_aux[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_02|y_aux[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_02|y_aux[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[0]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[0]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[1]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[1]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[2]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[2]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[3]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[3]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[4]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[4]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[5]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[5]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[6]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[6]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_in ; Rise       ; registrador_Saida|y_aux[7]|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_in ; Rise       ; registrador_Saida|y_aux[7]|clk   ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; in1_in[*]  ; clk_in     ; 4.945 ; 4.945 ; Rise       ; clk_in          ;
+;  in1_in[0] ; clk_in     ; 4.419 ; 4.419 ; Rise       ; clk_in          ;
+;  in1_in[1] ; clk_in     ; 4.434 ; 4.434 ; Rise       ; clk_in          ;
+;  in1_in[2] ; clk_in     ; 4.522 ; 4.522 ; Rise       ; clk_in          ;
+;  in1_in[3] ; clk_in     ; 4.097 ; 4.097 ; Rise       ; clk_in          ;
+;  in1_in[4] ; clk_in     ; 4.255 ; 4.255 ; Rise       ; clk_in          ;
+;  in1_in[5] ; clk_in     ; 4.945 ; 4.945 ; Rise       ; clk_in          ;
+;  in1_in[6] ; clk_in     ; 4.245 ; 4.245 ; Rise       ; clk_in          ;
+;  in1_in[7] ; clk_in     ; 3.814 ; 3.814 ; Rise       ; clk_in          ;
+; in2_in[*]  ; clk_in     ; 5.091 ; 5.091 ; Rise       ; clk_in          ;
+;  in2_in[0] ; clk_in     ; 4.014 ; 4.014 ; Rise       ; clk_in          ;
+;  in2_in[1] ; clk_in     ; 4.539 ; 4.539 ; Rise       ; clk_in          ;
+;  in2_in[2] ; clk_in     ; 3.935 ; 3.935 ; Rise       ; clk_in          ;
+;  in2_in[3] ; clk_in     ; 4.682 ; 4.682 ; Rise       ; clk_in          ;
+;  in2_in[4] ; clk_in     ; 4.251 ; 4.251 ; Rise       ; clk_in          ;
+;  in2_in[5] ; clk_in     ; 4.314 ; 4.314 ; Rise       ; clk_in          ;
+;  in2_in[6] ; clk_in     ; 4.260 ; 4.260 ; Rise       ; clk_in          ;
+;  in2_in[7] ; clk_in     ; 5.091 ; 5.091 ; Rise       ; clk_in          ;
+; op_in      ; clk_in     ; 7.162 ; 7.162 ; Rise       ; clk_in          ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; in1_in[*]  ; clk_in     ; -3.762 ; -3.762 ; Rise       ; clk_in          ;
+;  in1_in[0] ; clk_in     ; -4.367 ; -4.367 ; Rise       ; clk_in          ;
+;  in1_in[1] ; clk_in     ; -4.382 ; -4.382 ; Rise       ; clk_in          ;
+;  in1_in[2] ; clk_in     ; -4.470 ; -4.470 ; Rise       ; clk_in          ;
+;  in1_in[3] ; clk_in     ; -4.045 ; -4.045 ; Rise       ; clk_in          ;
+;  in1_in[4] ; clk_in     ; -4.203 ; -4.203 ; Rise       ; clk_in          ;
+;  in1_in[5] ; clk_in     ; -4.893 ; -4.893 ; Rise       ; clk_in          ;
+;  in1_in[6] ; clk_in     ; -4.193 ; -4.193 ; Rise       ; clk_in          ;
+;  in1_in[7] ; clk_in     ; -3.762 ; -3.762 ; Rise       ; clk_in          ;
+; in2_in[*]  ; clk_in     ; -3.883 ; -3.883 ; Rise       ; clk_in          ;
+;  in2_in[0] ; clk_in     ; -3.962 ; -3.962 ; Rise       ; clk_in          ;
+;  in2_in[1] ; clk_in     ; -4.487 ; -4.487 ; Rise       ; clk_in          ;
+;  in2_in[2] ; clk_in     ; -3.883 ; -3.883 ; Rise       ; clk_in          ;
+;  in2_in[3] ; clk_in     ; -4.630 ; -4.630 ; Rise       ; clk_in          ;
+;  in2_in[4] ; clk_in     ; -4.199 ; -4.199 ; Rise       ; clk_in          ;
+;  in2_in[5] ; clk_in     ; -4.262 ; -4.262 ; Rise       ; clk_in          ;
+;  in2_in[6] ; clk_in     ; -4.208 ; -4.208 ; Rise       ; clk_in          ;
+;  in2_in[7] ; clk_in     ; -5.039 ; -5.039 ; Rise       ; clk_in          ;
+; op_in      ; clk_in     ; -4.888 ; -4.888 ; Rise       ; clk_in          ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; y_out[*]  ; clk_in     ; 7.925 ; 7.925 ; Rise       ; clk_in          ;
+;  y_out[0] ; clk_in     ; 6.777 ; 6.777 ; Rise       ; clk_in          ;
+;  y_out[1] ; clk_in     ; 6.782 ; 6.782 ; Rise       ; clk_in          ;
+;  y_out[2] ; clk_in     ; 7.528 ; 7.528 ; Rise       ; clk_in          ;
+;  y_out[3] ; clk_in     ; 7.879 ; 7.879 ; Rise       ; clk_in          ;
+;  y_out[4] ; clk_in     ; 7.909 ; 7.909 ; Rise       ; clk_in          ;
+;  y_out[5] ; clk_in     ; 7.566 ; 7.566 ; Rise       ; clk_in          ;
+;  y_out[6] ; clk_in     ; 7.925 ; 7.925 ; Rise       ; clk_in          ;
+;  y_out[7] ; clk_in     ; 7.101 ; 7.101 ; Rise       ; clk_in          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; y_out[*]  ; clk_in     ; 6.777 ; 6.777 ; Rise       ; clk_in          ;
+;  y_out[0] ; clk_in     ; 6.777 ; 6.777 ; Rise       ; clk_in          ;
+;  y_out[1] ; clk_in     ; 6.782 ; 6.782 ; Rise       ; clk_in          ;
+;  y_out[2] ; clk_in     ; 7.528 ; 7.528 ; Rise       ; clk_in          ;
+;  y_out[3] ; clk_in     ; 7.879 ; 7.879 ; Rise       ; clk_in          ;
+;  y_out[4] ; clk_in     ; 7.909 ; 7.909 ; Rise       ; clk_in          ;
+;  y_out[5] ; clk_in     ; 7.566 ; 7.566 ; Rise       ; clk_in          ;
+;  y_out[6] ; clk_in     ; 7.925 ; 7.925 ; Rise       ; clk_in          ;
+;  y_out[7] ; clk_in     ; 7.101 ; 7.101 ; Rise       ; clk_in          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_in     ; clk_in   ; 122      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_in     ; clk_in   ; 122      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 48    ; 48   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sun Dec 15 15:12:13 2019
+Info: Command: quartus_sta COMP1 -c COMP1
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'COMP1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk_in clk_in
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.004
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.004       -13.625 clk_in 
+Info (332146): Worst-case hold slack is 1.537
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.537         0.000 clk_in 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.583
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.583       -64.847 clk_in 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 294 megabytes
+    Info: Processing ended: Sun Dec 15 15:12:14 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

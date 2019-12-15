@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity COMP2 is
-	generic(n: natural := 8);
+	generic(N: natural := 8);
 	port(
 		X: in std_logic_vector(n-1 downto 0);
 		clk, rst: in std_logic;

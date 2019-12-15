@@ -1,0 +1,51 @@
+# do COMP1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity COMP1
+# -- Compiling architecture andre_v1 of COMP1
+# vcom -93 -work work {/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/COMP2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity COMP2
+# -- Compiling architecture andre_v1 of COMP2
+# vcom -93 -work work {/home/andre/DLP_ADICIONAR_P2/DLP/P2/Correcao_P2/questao_02/Q2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Q2
+# -- Compiling architecture andre_v3 of Q2
+# 
+wave create -pattern none -portmode in -language vhdl /q2/op_in
+# q2
+wave create -pattern none -portmode in -language vhdl /q2/clk_in
+# q2
+wave create -pattern none -portmode in -language vhdl /q2/rst_in
+# q2
+wave create -pattern none -portmode in -language vhdl -range n 1 /q2/in1_in
+# q2
+wave create -pattern none -portmode in -language vhdl -range n 1 /q2/in2_in
+# q2
+wave create -pattern none -portmode out -language vhdl -range n 1 /q2/y_out
+# q2
+force -freeze NewSig:/q2/clk_in 1 0, 0 {50 ns} -r 100
+# Error while executing: force
+# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
