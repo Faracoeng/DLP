@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
--- DATE "12/15/2019 15:12:18"
+-- DATE "12/15/2019 17:38:16"
 
 -- 
 -- Device: Altera EP1C3T100A8 Package TQFP100

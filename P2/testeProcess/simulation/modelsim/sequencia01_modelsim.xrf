@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/andre/DLP_ADICIONAR_P2/DLP/P2/testeProcess/sequencia01.vhd
+source_file = 1, /home/andre/DLP_ADICIONAR_P2/DLP/P2/testeProcess/db/sequencia01.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = sequencia01
+instance = comp, \sa~output\, sa~output, sequencia01, 1
+instance = comp, \sb~output\, sb~output, sequencia01, 1
+instance = comp, \a~input\, a~input, sequencia01, 1
+instance = comp, \b~input\, b~input, sequencia01, 1

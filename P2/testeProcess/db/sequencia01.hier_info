@@ -1,0 +1,8 @@
+|sequencia01
+a => tb1.CLK
+a => sa.DATAIN
+b => tb1.DATAIN
+sa <= a.DB_MAX_OUTPUT_PORT_TYPE
+sb <= tb1.DB_MAX_OUTPUT_PORT_TYPE
+
+
