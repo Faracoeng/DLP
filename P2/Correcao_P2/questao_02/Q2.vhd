@@ -79,8 +79,4 @@ begin
 		x => saidaRegistradorDeSaida,
 		y => y_out	-- jogar em um sinal para entrar no somador
 	);
-------------------------------------------------------------------------------------------
-
-
-
 end architecture;
