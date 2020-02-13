@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/andre/UltimaRecDLP/questao05/simulation/modelsim
+Eq65
+Z1 w1581603091
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/andre/UltimaRecDLP/questao05/simulation/modelsim
+Z6 8/home/andre/UltimaRecDLP/questao05/q65.vhd
+Z7 F/home/andre/UltimaRecDLP/questao05/q65.vhd
+l0
+L9
+VCmkjenGlhY8B6]KD:9aE:3
+!s100 <1mZYizOjd<LISB^JBPU@0
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1581603938.769771
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/andre/UltimaRecDLP/questao05/q65.vhd|
+Z11 !s107 /home/andre/UltimaRecDLP/questao05/q65.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Aquestao65
+R2
+R3
+R4
+DEx4 work 3 q65 0 22 CmkjenGlhY8B6]KD:9aE:3
+l24
+L21
+Vbn8kKAzE?FQi@@0?YKcRf1
+!s100 :6;ZPSL@f^Y9FBP]aUYDj1
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

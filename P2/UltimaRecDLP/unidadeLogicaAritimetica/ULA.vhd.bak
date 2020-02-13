@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ULA is
+	-- generic (<name>	: <type>  :=	<default_value>;);
+	port
+	(
+		entrada_01, entrada_02 : in std_logic_vector(3 downto 0);
+		saida : out std_logic_vector(3 downto 0);
+		sel : in std_logic_vector(2 downto 0)
+	);
+end ULA;
+
+-- Library Clause(s) (optional)
+-- Use Clause(s) (optional)
+
+architecture <arch_name> of <entity_name> is
+
+	-- Declarations (optional)
+
+begin
+
+	-- Process Statement (optional)
+
+	-- Concurrent Procedure Call (optional)
+
+	-- Concurrent Signal Assignment (optional)
+
+	-- Conditional Signal Assignment (optional)
+
+	-- Selected Signal Assignment (optional)
+
+	-- Component Instantiation Statement (optional)
+
+	-- Generate Statement (optional)
+
+end <arch_name>;

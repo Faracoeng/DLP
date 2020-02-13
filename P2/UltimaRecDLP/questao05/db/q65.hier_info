@@ -1,0 +1,21 @@
+|q65
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+d => q.DATAA
+din[0] => q.DATAB
+din[1] => q.DATAB
+din[2] => q.DATAB
+din[3] => q.DATAB
+dout <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

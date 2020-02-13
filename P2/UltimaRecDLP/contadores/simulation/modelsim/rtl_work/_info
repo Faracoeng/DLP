@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/andre/UltimaRecDLP/contadores/simulation/modelsim
+Econtadores
+Z1 w1581594737
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/andre/UltimaRecDLP/contadores/simulation/modelsim
+Z5 8/home/andre/UltimaRecDLP/contadores/contadores.vhd
+Z6 F/home/andre/UltimaRecDLP/contadores/contadores.vhd
+l0
+L4
+V?__LKbG_0OgiXYYBYUdRT3
+!s100 19?`]GSTb[39e5kDJ0T4e3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1581595056.576077
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/andre/UltimaRecDLP/contadores/contadores.vhd|
+Z10 !s107 /home/andre/UltimaRecDLP/contadores/contadores.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Ahardware
+R2
+R3
+DEx4 work 10 contadores 0 22 ?__LKbG_0OgiXYYBYUdRT3
+l17
+L15
+VzT`cG7ZMJ0O5oM>8K1b:40
+!s100 ZLYk1BiX[Y[2<Vli9STSM0
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

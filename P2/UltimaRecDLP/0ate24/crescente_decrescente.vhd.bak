@@ -1,0 +1,28 @@
+-- A library clause declares a name as a library.  It 
+-- does not create the library; it simply forward declares 
+-- it. 
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity crescente_decrescente is
+	generic ( N	: natural := 24);
+	port
+	(
+		-- Input ports
+		
+		clk, rst: in std_logic;
+		UP_Down_n	: in std_logic;
+		saida : out integer range 0 to N 
+
+	);
+end crescente_decrescente;
+
+
+architecture <arch_name> of <entity_name> is
+
+
+begin
+
+
+
+end <arch_name>;

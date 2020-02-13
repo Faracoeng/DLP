@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity flip_flop is
+	port
+	(
+end flip_flop;
+
+architecture hardware of flip_flop is
+
+begin
+
+
+end architecture;

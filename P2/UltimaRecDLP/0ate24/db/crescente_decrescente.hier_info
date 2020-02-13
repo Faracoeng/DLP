@@ -1,0 +1,11 @@
+|crescente_decrescente
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+UP_Down_n => ~NO_FANOUT~
+saida[0] <= <GND>
+saida[1] <= <GND>
+saida[2] <= <GND>
+saida[3] <= <GND>
+saida[4] <= <GND>
+
+

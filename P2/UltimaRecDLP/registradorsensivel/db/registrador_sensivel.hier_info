@@ -1,0 +1,16 @@
+|registrador_sensivel
+enable => saida[0]$latch.LATCH_ENABLE
+enable => saida[1]$latch.LATCH_ENABLE
+enable => saida[2]$latch.LATCH_ENABLE
+rst => saida[2].IN0
+rst => comb.IN1
+rst => comb.IN1
+set => saida[2].IN1
+dados[0] => saida[0]$latch.DATAIN
+dados[1] => saida[1]$latch.DATAIN
+dados[2] => saida[2]$latch.DATAIN
+saida[0] <= saida[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/andre/UltimaRecDLP/testbench_xorGate/xor_gate.vhd
+source_file = 1, /home/andre/UltimaRecDLP/testbench_xorGate/db/xor_gate.cbx.xml
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = xor_gate
+instance = comp, \saida~output\, saida~output, xor_gate, 1
+instance = comp, \in1~input\, in1~input, xor_gate, 1
+instance = comp, \in2~input\, in2~input, xor_gate, 1
+instance = comp, \saida~0\, saida~0, xor_gate, 1
